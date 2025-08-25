@@ -45,6 +45,17 @@ return require("packer").startup(function(use)
         use("windwp/nvim-ts-autotag")
 
         use({
+                "epwalsh/obsidian.nvim",
+                tag = "*", -- recommended, use latest release instead of latest commit
+                requires = {
+                        -- Required.
+                        "nvim-lua/plenary.nvim",
+
+                        -- see below for full list of optional dependencies 👇
+                },
+        })
+
+        use({
                 "akinsho/toggleterm.nvim",
                 tag = "*",
                 config = function()
