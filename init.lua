@@ -1,8 +1,8 @@
 -- Here starts my own config, let's see how it works :)
 -- By Alguien Sasaki
-require("core.keymaps")
 require("core.plugins")
 require("core.loader")
+require("core.keymaps")
 require("luasnip.loaders.from_vscode").lazy_load()
 local null_ls = require("null-ls")
 
